@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC
+    "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN"
+    "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool
+        name="commandesPool"
+        res-type="javax.sql.DataSource"
+        datasource-classname="com.mysql.cj.jdbc.MysqlDataSource">
+        <property name="serverName"   value="VOTRE_HOST"/>
+        <property name="databaseName" value="VOTRE_BASE"/>
+        <property name="user"         value="VOTRE_UTILISATEUR"/>
+        <property name="password"     value="VOTRE_MOT_DE_PASSE"/>
+        <property name="port"         value="3306"/>
+        <property name="useSSL"       value="true"/>
+    </jdbc-connection-pool>
+
+    <jdbc-resource
+        jndi-name="jdbc/commandesDS"
+        pool-name="commandesPool"/>
+</resources>

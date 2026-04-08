@@ -23,3 +23,7 @@ target/
 
 *.md
 projet-data/
+
+# Credentials BDD — ne jamais commiter
+db.properties
+src/main/webapp/WEB-INF/glassfish-resources.xml

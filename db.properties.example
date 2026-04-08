@@ -1,0 +1,4 @@
+db.host=HOST_MYSQL
+db.name=BASE_DE_DONNEES
+db.user=UTILISATEUR
+db.password=MOT_DE_PASSE
